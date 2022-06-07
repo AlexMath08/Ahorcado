@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    
+</head>
+
+<body >
+    
+    <main>
+        
+        <header>
+            <img src="/img/logo.png" alt="Logo Alura">           
+        </header>
+
+        <div class="container">
+           <h1>JUEGO DEL AHORCADO</h1>
+          </div>
+
+        <div id="inicio" class="caja"> 
+            <div>
+                <button class="boton1" id="boton-iniciar">Iniciar Juego</button>
+            </div>
+            <div>
+                <button class="boton2" id="agregar-palabra">Agregar nueva palabra</button>
+            </div>
+        </div>
+
+
+        <div id="a-palabra" class="caja2 invisible">
+            <div>
+                <textarea name="palabra" id="palabra"  placeholder="Ingrese una palabra"></textarea>
+            </div>
+
+            <div>
+                <button class="boton boton3" id="guardar">Guardar y empezar</button>
+                <button class="boton boton4" id="cancelar">Cancelar</button>
+            </div>
+        </div>
+
+            <div id="juego" class="caja3 invisible">
+               
+                <div>
+                    <canvas id="ahorcado" height="400px" width="800px"></canvas>
+                </div>
+                <div>
+                    <button class="boton boton3" id="nuevo-juego">Nuevo juego</button>
+                    <button class="boton boton4" id="desistir">Desistir</button>
+                </div>
+            </div>       
+    </main>
+    <footer>
+    </footer>
+
+</body>
+
+<script src="/js/script.js"></script>
+<script src="/js/ahorcado.js"></script>
+<script src="/js/validarletra.js"></script>
+<script src="/js/dibujarLetra.js"></script>
+<script src="/js/empezarJuego.js"></script>
+<script src="/js/ganadorPededor.js"></script>
+
+
+</html>
